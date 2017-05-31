@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNativeBtnComponent'
+
+include ':app'
