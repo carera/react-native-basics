@@ -37,13 +37,12 @@ class App extends Component {
           <Text style={styles.text}>Hello</Text>
         </TouchableOpacity>
         <View
-          style={[styles.square, {backgroundColor: this.state.color}]}>
-        </View>
+          style={[styles.square, {backgroundColor: this.state.color}]}
+        />
       </View>
     )
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -66,5 +65,4 @@ const styles = StyleSheet.create({
   }
 })
 
-
-AppRegistry.registerComponent('ReactNativeBtnSwitch', () => App)
+AppRegistry.registerComponent('ReactNativeBtnComponent', () => App)
