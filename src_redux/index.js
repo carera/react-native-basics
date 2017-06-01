@@ -6,18 +6,13 @@ import {
 } from 'react-native'
 import Button from './components/Button.js'
 import Square from './components/Square.js'
-import {Provider, connect} from 'react-redux'
+import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import reducer from './redux/colorSwitch'
 
 const store = createStore(reducer)
 
 class App extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {color: 'blue'}
-  }
 
   render() {
     return (
