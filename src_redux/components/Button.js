@@ -8,15 +8,17 @@ import {connect} from 'react-redux'
 import {changeColor} from '../redux/colorSwitch'
 
 export class Button extends Component {
+
   buttonOnPress() {
     const currentColor = this.props.color
-    let newColor = 'red'
+    let newColor = 'green'
 
     if (currentColor !== 'blue') {
       newColor = 'blue'
     }
     this.props.changeColor(newColor)
   }
+
   render() {
     return (
       <TouchableOpacity
@@ -29,10 +31,12 @@ export class Button extends Component {
   }
 }
 
-const actions = {changeColor}
 const mapStateToProps = state => ({
   color: state.color
 })
+
+const actions = {changeColor}
+
 export default connect(mapStateToProps, actions)(Button)
 
 const styles = StyleSheet.create({

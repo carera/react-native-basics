@@ -4,8 +4,8 @@ import {
   StyleSheet,
   View
 } from 'react-native'
-import Button from './components/Button.js'
-import Square from './components/Square.js'
+import Button from './components/Button'
+import Square from './components/Square'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import reducer from './redux/colorSwitch'
@@ -27,8 +27,7 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
-  container:
-  {
+  container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
