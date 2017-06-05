@@ -5,7 +5,7 @@ import {
   Text
 } from 'react-native'
 import {connect} from 'react-redux'
-import {changeColor} from '../redux/colorSwitch.js'
+import {changeColor} from '../redux/colorSwitch'
 
 export class Button extends Component {
 
