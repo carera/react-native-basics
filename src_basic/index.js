@@ -8,10 +8,13 @@ import {
 } from 'react-native'
 
 class App extends Component {
-
   constructor(props) {
     super(props)
     this.state = {color: 'pink'}
+  }
+
+  shouldComponentUpdate() {
+    return true
   }
 
   changeColor() {
@@ -32,8 +35,7 @@ class App extends Component {
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.button}
-          onPress={this.changeColor.bind(this)}
-        >
+          onPress={this.changeColor.bind(this)}>
           <Text style={styles.text}>Hello</Text>
         </TouchableOpacity>
         <View
